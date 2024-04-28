@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./_components/head.html')
+	<body>
+		<div class="wrapper d-flex flex-column justify-between">
+			<!-- Navbar -->
+			@@include('./_components/navbar.html', { 
+				"activeLink": "home",
+				"extraClassList": "bg-hover-scroll on-over" 
+			})
+
+			<main class="flex-grow-1">
+				<!-- Hero -->
+				@@include('./_components/hero-1.html', {
+					"extraClassList": "gradient-bg pt-30 pb-15 pb-lg-20 pt-xl-36"
+				})
+
+				<!-- Features -->
+				@@include('./_components/features-1.html')
+
+				<!-- Features -->
+				@@include('./_components/features-3.html')
+
+				<!-- Use cases -->
+				@@include('./_components/use-cases-1.html', { 
+					"extraClassList": "bg-lite-blue py-20 py-lg-30" 
+				})
+
+				<!-- Reviews -->
+				@@include('./_components/reviews-1.html', {
+					"extraClassList": "pt-20 pt-lg-30 pb-10 pb-lg-15"
+				})
+
+				<!-- Pricing -->
+				@@include('./_components/pricing-1.html', {
+					"extraClassList": "py-10 py-lg-15"
+				})
+
+				<!-- FAQ -->
+				@@include('./_components/faq.html', { 
+					"extraClassList": "py-10 py-lg-15" 
+				})
+
+				<!-- CTA -->
+				@@include('./_components/cta-1.html')
+			</main>
+
+			<!-- Footer -->
+			@@include('./_components/footer-1.html', {
+				"extraClassList": "bg-striped pt-10 pt-lg-15"
+			})
+		</div>
+
+		@@include('./_components/body-end.html')
+	</body>
+</html>

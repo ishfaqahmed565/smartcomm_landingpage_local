@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('./_components/head.html')
+
+	<body>
+		<div class="wrapper d-flex flex-column justify-between">
+			<!-- Navbar -->
+			@@include('./_components/navbar.html', {
+				 "activeLink": "404-lite", 
+				 "extraClassList": "bg-white" 
+				})
+
+			<main class="flex-grow-1">
+				<section class="py-10 py-lg-15">
+					<div class="container">
+						<div class="row justify-center">
+							<div class="col-lg-6">
+								<div class="text-center">
+									<img
+										src="assets/images/illustrations/error-blue.svg"
+										alt=""
+										class="img-fluid mb-10" />
+									<h2 class="mb-4">Oops! Page Not Found.</h2>
+									<p class="mb-8">
+										The page you are looking for is not available or has been moved. Try a different
+										page or go to homepage with the button below.
+									</p>
+									<a href="index-lite.html" class="btn btn-primary">Go to home</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer -->
+			@@include('./_components/footer-1.html', { "extraClassList": "bg-striped pt-10 pt-lg-15" })
+		</div>
+
+		@@include('./_components/body-end.html')
+	</body>
+</html>

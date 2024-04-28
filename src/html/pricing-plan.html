@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+	@@include('./_components/head.html')
+	<body>
+		<div class="wrapper d-flex flex-column justify-between">
+			<!-- Navbar -->
+			@@include('./_components/navbar.html', { 
+				"dark" : true, 
+				"activeLink": "pricing-plan",
+				"extraClassList": "bg-dark"
+			})
+
+			<main class="flex-grow-1">
+				<!-- Page header -->
+				@@include('./_components/page-header.html', {
+					"dark": true,
+					"pageName": "Pricing & Plan", 
+					"pageLinkName": "Pricing",
+				})
+
+				<!-- Pricing -->
+				@@include('./_components/pricing-2.html', { 
+					"dark": true, 
+					"extraClassList": "pt-20 pb-10 pt-lg-30 pb-lg-15" 
+				})
+
+				<!-- FAQ -->
+				@@include('./_components/faq.html', { 
+					"dark": true,
+					"extraClassList": "py-10 py-lg-15" 
+				})
+
+				<!-- CTA -->
+				@@include('./_components/cta-1.html', { "dark": true })
+			</main>
+
+			<!-- Footer -->
+			@@include('./_components/footer-1.html', {
+				"dark": true,
+				"extraClassList": "bg-striped pt-10 pt-lg-15"
+			})
+		</div>
+
+		@@include('./_components/body-end.html')
+	</body>
+</html>

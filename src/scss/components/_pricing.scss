@@ -1,0 +1,82 @@
+.pricing-card {
+	border: 1px solid $theme-blue-4;
+	transition: $transition-base;
+	position: relative;
+
+	&:hover,
+	&.active {
+		border-color: $primary;
+
+		.pricing-btn {
+			color: $white;
+			background-color: $primary;
+			border-color: $primary;
+		}
+	}
+
+	&:hover {
+		box-shadow: $box-shadow-lg;
+	}
+
+	.badge {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+	}
+}
+
+// SWITCH STYLES
+
+.switch-wrapper {
+	position: relative;
+}
+
+.switch-wrapper [type="radio"] {
+	position: absolute;
+	left: -9999px;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+	color: $white;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+	background: transparent;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly + label[for="yearly"] ~ .highlighter {
+	transform: none;
+}
+
+.switch-wrapper [type="radio"]:checked#yearly + label[for="monthly"] ~ .highlighter {
+	transform: translateX(100%);
+}
+
+.switch-wrapper label {
+	z-index: 1;
+	min-width: 100px;
+	cursor: pointer;
+	border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    padding: .5rem 1rem;
+	transition: $transition-base;
+    font-weight: 500;
+}
+
+.switch-wrapper label:hover {
+	color: $primary;
+}
+
+.switch-wrapper .highlighter {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: calc(50% - 8px);
+	height: calc(100% - 16px);
+	border-radius: 8px;
+	background: $primary;
+	transition: $transition-base;
+}

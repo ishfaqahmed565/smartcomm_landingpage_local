@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+	@@include('./_components/head.html')
+	<body>
+		<div class="wrapper d-flex flex-column justify-between">
+			<!-- Navbar -->
+			@@include('./_components/navbar.html', { 
+				"dark" : true, 
+				"activeLink": "use-cases-details",
+				"extraClassList": "bg-dark"
+			})
+
+			<main class="flex-grow-1">
+				<!-- Page header -->
+				@@include('./_components/page-header.html', {
+					"dark": true,
+					"pageName": "Writing Blog Content", 
+					"pageLinkName": "Writing Blog Content"
+				})
+
+				<!-- Use case details -->
+				<section class="py-10 py-lg-15">
+					<div class="container">
+						<div class="row align-center">
+							<div class="col-lg-6 col-xl-5" data-aos="fade-up-sm" data-aos-delay="50">
+								<div class="text-center text-lg-start">
+									<h1 class="text-white mb-4">Complete a blog entry in half the time.</h1>
+									<p class="mb-8">
+										With a few clicks of a button, you can create a whole outline, opening
+										paragraph, and body for your blog.
+									</p>
+									<form action="#" class="w-xl-3quarter">
+										<div class="input-group">
+											<input type="email" class="form-control" placeholder="Enter Your Email" />
+											<button class="btn btn-primary-dark" type="button">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													fill="none"
+													viewBox="0 0 24 24"
+													width="24"
+													height="24">
+													<path
+														stroke="currentColor"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="1.5"
+														d="m4.031 8.917 15.477-4.334a.5.5 0 0 1 .616.617l-4.333 15.476a.5.5 0 0 1-.94.067l-3.248-7.382a.5.5 0 0 0-.256-.257L3.965 9.856a.5.5 0 0 1 .066-.94v0Z" />
+												</svg>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-lg-6 offset-xl-1" data-aos="fade-up-sm" data-aos-delay="100">
+								<div class="text-center">
+									<img
+										class="img-fluid d-inline-block"
+										src="assets/images/screens/screen-3.png"
+										alt="" />
+								</div>
+							</div>
+						</div>
+						<hr class="border-top border-dark-blue opacity-100 my-18" />
+						<div class="row justify-center">
+							<div class="col-lg-8">
+								<article>
+									<h1>How to use AI blog post generator to speed up your writing process.</h1>
+									<p>
+										The inability to write. Everyone has been there. Even the most seasoned and
+										well-versed writers and content producers endure mental gaps. Nulla Lorem mollit
+										cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate
+										exercitation incididunt aliquip deserunt reprehenderit elit laborum.
+									</p>
+									<p>
+										Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse
+										pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure
+										tempor cupidatat incididunt.
+									</p>
+									<h4><span class="text-primary-dark">Step 1:</span> Write Higher Converting Posts</h4>
+									<p>
+										Everyone has been there. Even the most seasoned and well-versed writers and
+										content producers endure mental gaps. Nulla Lorem mollit cupidatat irure.
+										Laborum magna nulla duis ullamco cillum dolor. Voluptate anyone exercitation
+										incididunt aliquip deserunt reprehenderit elit laborum.
+									</p>
+									<p>
+										Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse
+										pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure
+										tempor cupidatat incididunt.
+									</p>
+									<img src="assets/images/screens/screen-1.jpg" alt="" class="img-fluid rounded" />
+									<h4>
+										<span class="text-primary-dark">Step 2:</span> Start creating powerful content, for
+										blog post
+									</h4>
+									<p>
+										Everyone has been there. Even the most seasoned and well-versed writers and
+										content producers endure mental gaps. Nulla Lorem mollit cupidatat irure.
+										Laborum magna nulla duis ullamco cillum dolor. Voluptate anyone exercitation
+										incididunt aliquip deserunt reprehenderit elit laborum.
+									</p>
+									<img src="assets/images/screens/screen-1.jpg" alt="" class="img-fluid rounded" />
+									<h4>
+										<span class="text-primary-dark">Step 2:</span> Start creating powerful content, for
+										blog post
+									</h4>
+									<p>
+										Everyone has been there. Even the most seasoned and well-versed writers and
+										content producers endure mental gaps. Nulla Lorem mollit cupidatat irure.
+										Laborum magna nulla duis ullamco cillum dolor. Voluptate anyone exercitation
+										incididunt aliquip deserunt reprehenderit elit laborum.
+									</p>
+									<p>
+										Fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+										deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor
+										cupidatat incididunt.
+									</p>
+									<img src="assets/images/screens/screen-1.jpg" alt="" class="img-fluid rounded" />
+									<p>
+										GenAI has been there. Even the most seasoned and well-versed writers and content
+										producers endure mental gaps. Nulla Lorem mollit cupidatat irure. Laborum magna.
+									</p>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Reviews -->
+				@@include('./_components/reviews-1.html', { 
+					"dark": true, 
+					"extraClassList": "py-10 py-lg-15" 
+				})
+
+				<!-- FAQ -->
+				@@include('./_components/faq.html', { 
+					"dark": true,
+					"extraClassList": "py-10 py-lg-15" 
+				})
+
+				<!-- CTA -->
+				@@include('./_components/cta-1.html', { "dark": true })
+			</main>
+
+			<!-- Footer -->
+			@@include('./_components/footer-1.html', {
+				"dark": true,
+				"extraClassList": "bg-striped pt-10 pt-lg-15"
+			})
+		</div>
+
+		@@include('./_components/body-end.html')
+	</body>
+</html>

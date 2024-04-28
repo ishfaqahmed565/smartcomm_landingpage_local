@@ -1,0 +1,32 @@
+@each $color, $value in $gradients {
+	// Gradient bg
+	.bg-#{$color} {
+		background: $value;
+	}
+
+	// Gradient text
+	.text-#{$color} {
+		background: $value;
+		background-clip: text;
+		-webkit-background-clip: text;
+		text-fill-color: transparent;
+		-webkit-text-fill-color: transparent;
+	}
+
+	// Gradient btn
+	.btn-#{$color} {
+		background: $value;
+		color: $white;
+		border: 0;
+
+		&:hover,
+		&:focus,
+		.btn-check:checked + &,
+		:not(.btn-check) + &:active,
+		&:first-child:active,
+		&.active,
+		&.show {
+			color: $white;
+		}
+	}
+}

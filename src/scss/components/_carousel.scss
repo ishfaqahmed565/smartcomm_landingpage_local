@@ -1,0 +1,30 @@
+.rolling-carousel-wrapper {
+	transition-timing-function: linear;
+}
+
+.swiper-pagination {
+	position: static;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	display: block;
+	border-radius: 1000px;
+	background: $theme-blue-2;
+	opacity: 1;
+	transition: $transition-base;
+
+	&-active {
+		background: $primary;
+		opacity: 1;
+	}
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0;
+}

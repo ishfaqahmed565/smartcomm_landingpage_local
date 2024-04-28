@@ -1,0 +1,16 @@
+.account-section {
+	// min-height: 100vh;
+}
+
+.account-wrapper {
+	max-width: 460px;
+	margin: auto;
+}
+
+.close-btn {
+	@include media-breakpoint-up(md) {
+		position: absolute;
+		top: 1.5rem;
+		right: 1.5rem;
+	}
+}

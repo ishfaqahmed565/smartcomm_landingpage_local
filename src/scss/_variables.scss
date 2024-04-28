@@ -1,0 +1,196 @@
+/* 
+============================================
+Colors
+============================================
+*/
+$white: #fff;
+$black: #000;
+
+// Blue
+$theme-blue: #6a4dff;
+$theme-yellow: #e6f85e;
+
+$theme-blue-1: #f3f8ff;
+$theme-blue-2: #eae6ff;
+$theme-blue-3: #bdbfd4;
+$theme-blue-4: #c3d1e3;
+$theme-blue-5: #b7a9ff;
+$theme-blue-6: #747694;
+
+$theme-dark-1: #2e2f45;
+$theme-dark-2: #262838;
+$theme-dark-3: #191a28;
+$theme-dark-4: #171825;
+$theme-dark-5: #11121c;
+
+$gradient-1: linear-gradient(92.73deg, #b324d7 7.07%, #fe577f 97.81%);
+$gradient-2: linear-gradient(90.22deg, #58ebff 0.19%, #e6f85e 101.84%);
+$gradient-3: linear-gradient(270deg, rgba(50, 51, 55, 0.4) 50%, rgba(70, 79, 111, 0.2) 100%);
+
+// Theme colors
+$primary: $theme-blue;
+$dark: $theme-dark-5;
+$light: $theme-blue-3;
+$body-color: $theme-dark-5;
+$border-color: $theme-blue-3;
+
+$primary-dark: $theme-yellow;
+$body-color-dark: $theme-blue-3;
+$body-bg-dark: $theme-dark-5;
+$border-color-dark: $theme-dark-1;
+$link-color-dark: $primary-dark;
+
+$prefix: gen-;
+$enable-negative-margins: true;
+
+// Spacer
+$spacer: 1rem;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer * 0.75,
+	4: $spacer * 1,
+	5: $spacer * 1.25,
+	6: $spacer * 1.5,
+	7: $spacer * 1.75,
+	8: $spacer * 2,
+	9: $spacer * 2.25,
+	10: $spacer * 2.5,
+	11: $spacer * 2.75,
+	12: $spacer * 3,
+	13: $spacer * 3.25,
+	14: $spacer * 3.5,
+	15: $spacer * 3.75,
+	16: $spacer * 4,
+	17: $spacer * 4.25,
+	18: $spacer * 4.5,
+	19: $spacer * 4.75,
+	20: $spacer * 5,
+	21: $spacer * 5.25,
+	22: $spacer * 5.5,
+	23: $spacer * 5.75,
+	24: $spacer * 6,
+	25: $spacer * 6.25,
+	26: $spacer * 6.5,
+	27: $spacer * 6.75,
+	28: $spacer * 7,
+	29: $spacer * 7.25,
+	30: $spacer * 7.5,
+	31: $spacer * 7.75,
+	32: $spacer * 8.25,
+	33: $spacer * 8.5,
+	34: $spacer * 8.75,
+	35: $spacer * 9,
+	36: $spacer * 9.25,
+	37: $spacer * 9.5,
+	38: $spacer * 9.75,
+	39: $spacer * 10,
+	40: $spacer * 10.25,
+);
+
+// Container
+$container-padding-x: 3rem;
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1344px,
+);
+
+// Grid columns
+$grid-gutter-width: 2rem;
+
+// Font
+$font-family-sans-serif: "Space Grotesk", system-ui, -apple-system, Arial, sans-serif, "Apple Color Emoji",
+	"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.125;
+$h1-font-size: clamp(2.25rem, 1.7143rem + 1.7143vw, 3rem);
+$h2-font-size: clamp(2rem, 1.6429rem + 1.1429vw, 2.5rem);
+$h3-font-size: clamp(1.75rem, 1.5714rem + 0.5714vw, 2rem);
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1.125rem;
+
+// headings-variables
+$headings-font-weight: 600;
+$headings-line-height: 1.25;
+
+// Input
+$input-color: var(--#{$prefix}emphasis-color);
+$input-focus-border-color: $primary;
+$input-focus-box-shadow: none;
+
+// Border radius
+$border-radius: 0.5rem;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 0.75rem;
+$border-radius-xl: 1rem;
+$border-radius-xxl: 1.25rem;
+
+// Input + button
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 1.5rem;
+$input-btn-padding-y-sm: 0.5rem;
+$input-btn-padding-x-sm: 1.25rem;
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 2rem;
+
+// Button
+$btn-font-weight: 500;
+
+// Transition
+$transition-fast: all 0.15s ease-in-out;
+
+// Navbar
+$navbar-padding-y: $spacer * 1;
+$navbar-light-color: $theme-dark-5;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+$navbar-light-disabled-color: rgba($theme-dark-5, 0.25);
+
+// Navbar dark
+$navbar-dark-color: $theme-blue-2;
+$navbar-dark-hover-color: $primary-dark;
+$navbar-dark-active-color: $primary-dark;
+$navbar-dark-disabled-color: rgba($theme-blue-2, 0.25);
+
+// Dropdown
+$dropdown-min-width: 14rem;
+$dropdown-padding-x: 0.5rem;
+$dropdown-padding-y: 0.75rem;
+$dropdown-link-color: var(--#{$prefix}body-color);
+$dropdown-link-hover-color: $primary;
+$dropdown-link-hover-bg: transparent;
+
+$dropdown-link-active-color: $primary;
+$dropdown-link-active-bg: transparent;
+
+// Badge
+$badge-font-size: 1rem;
+$badge-font-weight: 500;
+$badge-padding-y: 0.5rem;
+$badge-padding-x: 0.1rem;
+
+// Accordion
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.25rem;
+$accordion-button-bg: transparent;
+$accordion-button-active-bg: transparent;
+
+// Aspect ratios
+$aspect-ratios: (
+	"1x1": 100%,
+	"4x3": calc(3 / 4 * 100%),
+	"6x4": calc(4 / 6 * 100%),
+	"16x9": calc(9 / 16 * 100%),
+	"21x9": calc(9 / 21 * 100%),
+);
+
+// Pagination
+$pagination-padding-y: 0.5rem;
+$pagination-padding-x: 0.5rem;
+$pagination-color: var(--#{$prefix}body-color);
+$pagination-hover-border-color: var(--#{$prefix}link-hover-color);

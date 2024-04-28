@@ -1,0 +1,84 @@
+/* ====================================
+Template Name: GenAI
+Description: AI Content Writing & Copywriting HTML5 Landing Page Template
+Template URI: https://themeforest.net/item/genai-ai-based-copywriting-and-content-writing-landing-page-template/45150495
+Author: Marvel Theme
+Author URI: https://themeforest.net/user/marvel_theme
+Version: 1.1
+Published: 1 May 2023
+Last Update: 9 May 2023
+==================================== */
+
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "plugins/bootstrap-5.3.0-alpha3/functions";
+
+// 2. Include any default variable overrides here
+@import "variables";
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "plugins/bootstrap-5.3.0-alpha3/variables";
+@import "plugins/bootstrap-5.3.0-alpha3/variables-dark";
+
+// 4. Include any default map overrides here
+@import "maps";
+
+// 5. Include remainder of required parts
+@import "plugins/bootstrap-5.3.0-alpha3/maps";
+@import "plugins/bootstrap-5.3.0-alpha3/mixins";
+@import "plugins/bootstrap-5.3.0-alpha3/root";
+
+// 6. Optionally include any other parts as needed
+@import "plugins/bootstrap-5.3.0-alpha3/utilities";
+@import "plugins/bootstrap-5.3.0-alpha3/reboot";
+@import "plugins/bootstrap-5.3.0-alpha3/type";
+@import "plugins/bootstrap-5.3.0-alpha3/images";
+@import "plugins/bootstrap-5.3.0-alpha3/containers";
+@import "plugins/bootstrap-5.3.0-alpha3/grid";
+@import "plugins/bootstrap-5.3.0-alpha3/tables";
+@import "plugins/bootstrap-5.3.0-alpha3/forms";
+@import "plugins/bootstrap-5.3.0-alpha3/buttons";
+@import "plugins/bootstrap-5.3.0-alpha3/transitions";
+@import "plugins/bootstrap-5.3.0-alpha3/dropdown";
+@import "plugins/bootstrap-5.3.0-alpha3/button-group";
+@import "plugins/bootstrap-5.3.0-alpha3/nav";
+@import "plugins/bootstrap-5.3.0-alpha3/navbar";
+@import "plugins/bootstrap-5.3.0-alpha3/card";
+@import "plugins/bootstrap-5.3.0-alpha3/accordion";
+@import "plugins/bootstrap-5.3.0-alpha3/breadcrumb";
+@import "plugins/bootstrap-5.3.0-alpha3/pagination";
+@import "plugins/bootstrap-5.3.0-alpha3/badge";
+@import "plugins/bootstrap-5.3.0-alpha3/alert";
+@import "plugins/bootstrap-5.3.0-alpha3/progress";
+@import "plugins/bootstrap-5.3.0-alpha3/list-group";
+@import "plugins/bootstrap-5.3.0-alpha3/close";
+@import "plugins/bootstrap-5.3.0-alpha3/toasts";
+@import "plugins/bootstrap-5.3.0-alpha3/modal";
+@import "plugins/bootstrap-5.3.0-alpha3/tooltip";
+@import "plugins/bootstrap-5.3.0-alpha3/popover";
+@import "plugins/bootstrap-5.3.0-alpha3/carousel";
+@import "plugins/bootstrap-5.3.0-alpha3/spinners";
+@import "plugins/bootstrap-5.3.0-alpha3/offcanvas";
+@import "plugins/bootstrap-5.3.0-alpha3/placeholders";
+@import "plugins/bootstrap-5.3.0-alpha3/helpers";
+
+@import "utilities";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "plugins/bootstrap-5.3.0-alpha3/utilities/api";
+
+// 8. Add additional custom code here
+@import "global";
+@import "components/navbar";
+@import "components/hero";
+@import "components/features";
+@import "components/pricing";
+@import "components/faq";
+@import "components/cta";
+@import "components/blog";
+@import "components/team";
+@import "components/account";
+@import "components/footer";
+@import "dark";

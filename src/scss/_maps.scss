@@ -1,0 +1,32 @@
+// Create your own map
+$gen-colors: (
+	"white": $white,
+	"black": $black,
+
+	"yellow": $theme-yellow,
+
+	"blue": $theme-blue,
+
+	"light-blue": $theme-blue-1,
+	"light-blue-2": $theme-blue-2,
+	"light-blue-3": $theme-blue-3,
+	"light-blue-4": $theme-blue-4,
+	"light-blue-5": $theme-blue-5,
+	"light-blue-6": $theme-blue-6,
+
+	"dark-blue": $theme-dark-1,
+	"dark-blue-2": $theme-dark-2,
+	"dark-blue-3": $theme-dark-3,
+	"dark-blue-4": $theme-dark-4,
+	"dark-blue-5": $theme-dark-5,
+
+	"primary-dark": $primary-dark,
+);
+
+$gradients: (
+	gradient-1: $gradient-1,
+	gradient-2: $gradient-2,
+	gradient-3: $gradient-3,
+);
+
+$theme-colors: map-merge($theme-colors, $gen-colors);

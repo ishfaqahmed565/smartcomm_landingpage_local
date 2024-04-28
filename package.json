@@ -1,0 +1,30 @@
+{
+	"name": "gen-ai",
+	"version": "1.0.0",
+	"description": "",
+	"author": "Shamsul Islam Sujon <shams.sujon.01@gmail.com> (https://shamssujon.com/)",
+	"license": "ISC",
+	"main": "gulpfile.js",
+	"scripts": {
+		"start": "gulp",
+		"build": "gulp",
+		"prod": "gulp prod"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.14",
+		"browser-sync": "^2.29.1",
+		"cssnano": "^6.0.0",
+		"del": "6.1.1",
+		"gulp": "^4.0.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-file-include": "^2.3.0",
+		"gulp-imagemin": "7.1.0",
+		"gulp-postcss": "^9.0.1",
+		"gulp-pretty-html": "^2.0.10",
+		"gulp-purgecss": "^5.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-uglify": "^3.0.2",
+		"postcss": "^8.4.21",
+		"sass": "^1.60.0"
+	}
+}
